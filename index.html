@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Perry - My Portfolio</title>
+</head>
+
+<body>
+    <!-- Move this into a column Flexbox to also align up the header/footer. It will be needed for responsiveness for the nav bar too...maybe....  -->
+<section class="container-column">
+    <header class="header">
+        <img src="./Assets/images/myphotosign_170551_w.png" alt="graphic writing of Alexander Perry" />
+        <nav>
+            <ul>
+                <li><a href="#About-Me">About me</a></li>
+                <li><a href="#My-Work">My Work</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-row" id="About-Me">
+            <header class="card-header">
+                <h2>About Me</h2>
+                <img src="./Assets/images/alex2.jpg" alt="Picture of Alex" width=100px />
+            </header>
+            <section class="card">
+
+                My name is Alex
+            </section>
+        </section>
+
+        <!-- Flex Box setup for #My-Work -> Using a column to create a new container for each item -->
+        <section class="container-row" id="My-Work">
+            <header class="card-header">
+                <h2>My work</h2>
+            </header>
+            <!-- Column Flexbox-container for aligning Work examples. First item takes up full row container, but allows for adding more items-->
+            <section class="container-column">
+                <section class="container-row">
+                    <section class="card">
+                        <a href="https://alexander-perry.github.io/Horiseon/">
+                            <img src="./Assets/images/Horiseon.png" alt="Screenshot of Horiseon site"/>
+                        </a>
+                        <header>
+                            <h2>Code Refactor</h2>
+                            <p>HTML/CSS</p>
+                        </header>
+                    </section>
+                </section>
+
+                <section class="container-row">
+                    <section class="card">
+                        <a href="https://alexander-perry.github.io/CSS-Cheatsheet/">
+                            <img src="./Assets/images/CSS_Snippet.png" alt="Screenshot of CSS Snipper site" />
+                        </a>
+                        <header>
+                            <h2>CSS Snippet</h2>
+                            <p>HTML/CSS</p>
+                        </header>
+                    </section>
+
+                    <section class="card">
+                        <img src="./Assets/images/placeholder.png" />
+                        <header>
+                            <h2>Placeholder</h2>
+                            <p>JavaScript</p>
+                        </header>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="container-row" id="Contact">
+            <header class="card-header">
+                <h2>Contact Me</h2>
+            </header>
+            <section class="card">+61433671631</section>
+            <section class="card"><a href="mailto:alexander.h.perry@gmail.com">alexander.h.perry@gmail.com</a></section>
+            <section class="card"><a href="http://github.com/Alexander-Perry">GitHub</a></section>
+
+
+
+
+            <!-- <ul>
+            <li>Alex Perry</li>
+            <li>Phone: 0433671631 </li>
+            <li>email: alexander.h.perry@gmail.com </li>
+            </ul> -->
+        </section>
+        </section>
+    </main>
+    <footer>
+        Alexander Perry - 2022
+    </footer>
+</section>
+</body>
+
+</html>
