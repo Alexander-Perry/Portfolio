@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-body, a{
+body,
+a {
     background-color: #252525;
     color: white;
     font-family: Verdana, sans-serif;
@@ -10,7 +11,6 @@ body, a{
 
 /* Main Header Styling - Signature sized float left, Page links Float Right  To be adjusted to suit flexbox */
 .header {
-    height: 75px;
     border-bottom: 1px solid black;
     padding-top: 20px;
     margin-bottom: 20px;
@@ -20,15 +20,12 @@ body, a{
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
+    justify-self: center;
 }
 
-.header img{
-    float:left;
-    width:200px;
-}
-
-.header nav{
-    float:right;
+.header img {
+    width: 200px;
+    margin-right: auto;
 }
 
 /* About me image as an oval */
@@ -75,6 +72,7 @@ body, a{
     border-radius: 1%;
     border: 2px solid purple;
 }
+
 /* Title for each card */
 .card header {
     position: absolute;
@@ -87,29 +85,37 @@ body, a{
     font-size: smaller;
 }
 
-
-
-/* media query for Tablet screens */
-@media screen and (max-width: 992px) {
-
-}
-/* Mobile screens */
-@media screen and (max-width: 768px) {
-    .container-row {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .container-column{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 /* END FLEXBOX CODE */
 footer {
     text-align: center;
     border-top: 1px solid black;
     margin: 10px;
     padding-top: 10px;
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+    .container-row {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card-header {
+        text-align: right;
+        align-self: flex-start;
+        flex: 0;
+        border: none;
+        margin: 0;
+        align-self: center;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+    nav {
+        align-self: center;
+        font-size: larger;
+    }
 }
