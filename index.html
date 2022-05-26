@@ -9,85 +9,105 @@
 
 <body>
     <!-- Move this into a column Flexbox to also align up the header/footer. It will be needed for responsiveness for the nav bar too...maybe....  -->
-<section class="container-column">
-    <header class="header container-row">
-        <img src="./Assets/images/myphotosign_170551_w.png" alt="graphic writing of Alexander Perry" />
-        <nav>
-            <ul>
-                <li><a href="#About-Me">About me</a></li>
-                <li><a href="#My-Work">My Work</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>           
-        </nav>
-    </header>
+    <section class="container-column">
+        <header class="header container-row">
+            <img src="./Assets/images/myphotosign_170551_w.png" alt="graphic writing of Alexander Perry" />
+            <nav>
+                <ul>
+                    <li><a href="#About-Me">About me</a></li>
+                    <li><a href="#My-Work">My Work</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section class="container-row" id="About-Me">
-            <header class="card-header">
-                <h2>About Me</h2>
-                <img src="./Assets/images/alex2.jpg" alt="Picture of Alex" width=100px />
-            </header>
-            <section class="card">
-
-                My name is Alex
+        <main>
+            <section class="container-row" id="About-Me">
+                <header class="card-header">
+                    <h2>About Me</h2>
+                    <img src="./Assets/images/alex2.jpg" alt="Picture of Alex" width=100px />
+                </header>
+                <section class="card">
+                    <p>
+                        My name is Alex. 
+                    </p>
+                    <p>
+                        My journey into coding started back in the early 2000s as a teenager messing about on the family
+                        computer, where after a few months I landed my first gig as a junior web developer.
+                    </p>
+                    <p>
+                        Shift to 2007, working for Optus doing tech support, A senior colleague introduced me to his
+                        automation scripts which he used for reporting and network testing.
+                        <i>...After plenty of google searches, forum posts... I had automated
+                            my entire job down to but a few button clicks. </i>
+                    <!-- <p>
+                        Over the years, I have developied small scripts and systems as personal projects to fill
+                        gaps where some of the systems didn't quite fulfill.
+                    </p> -->
+                    <p>
+                        Below is a portfolio of my work while being part of the Coding Bootcamp
+                    </p>
+                    <p>Thanks for coming to my TED Talk</p>
+                </section>
+                <section class="card"></section>
             </section>
-        </section>
 
-        <!-- Flex Box setup for #My-Work -> Using a column to create a new container for each item -->
-        <section class="container-row" id="My-Work">
-            <header class="card-header">
-                <h2>My work</h2>
-            </header>
-            <!-- Column Flexbox-container for aligning Work examples. First item takes up full row container, but allows for adding more items-->
-            <section class="container-column">
-                <section class="container-row">
-                    <section class="card">
-                        <a href="https://alexander-perry.github.io/Horiseon/">
-                            <img src="./Assets/images/Horiseon.png" alt="Screenshot of Horiseon site"/>
-                        </a>
-                        <header>
-                            <h2>Code Refactor</h2>
-                            <p>HTML/CSS</p>
-                        </header>
+            <!-- Flex Box setup for #My-Work -> Using a column to create a new container for each item -->
+            <section class="container-row" id="My-Work">
+                <header class="card-header">
+                    <h2>My work</h2>
+                </header>
+                <!-- Column Flexbox-container for aligning Work examples. First item takes up full row container, but allows for adding more items-->
+                <section class="container-column">
+                    <section class="container-row">
+                        <section class="card">
+                            <a href="https://alexander-perry.github.io/Horiseon/">
+                                <img src="./Assets/images/Horiseon.png" alt="Screenshot of Horiseon site" />
+                            </a>
+                            <header>
+                                <h2>Code Refactor</h2>
+                                <p>HTML/CSS</p>
+                            </header>
+                        </section>
+                    </section>
+
+                    <section class="container-row">
+                        <section class="card">
+                            <a href="https://alexander-perry.github.io/CSS-Cheatsheet/">
+                                <img src="./Assets/images/CSS_Snippet.png" alt="Screenshot of CSS Snipper site" />
+                            </a>
+                            <header>
+                                <h2>CSS Snippet</h2>
+                                <p>HTML/CSS</p>
+                            </header>
+                        </section>
+
+                        <section class="card">
+                            <img src="./Assets/images/placeholder.png" alt="Placeholder image for next project" />
+                            <header>
+                                <h2>Placeholder</h2>
+                                <p>JavaScript</p>
+                            </header>
+                        </section>
                     </section>
                 </section>
-
-                <section class="container-row">
-                    <section class="card">
-                        <a href="https://alexander-perry.github.io/CSS-Cheatsheet/">
-                            <img src="./Assets/images/CSS_Snippet.png" alt="Screenshot of CSS Snipper site" />
-                        </a>
-                        <header>
-                            <h2>CSS Snippet</h2>
-                            <p>HTML/CSS</p>
-                        </header>
-                    </section>
-
-                    <section class="card">
-                        <img src="./Assets/images/placeholder.png" />
-                        <header>
-                            <h2>Placeholder</h2>
-                            <p>JavaScript</p>
-                        </header>
-                    </section>
-                </section>
             </section>
-        </section>
 
-        <section class="container-row" id="Contact">
-            <header class="card-header">
-                <h2>Contact Me</h2>
-            </header>
-            <section class="card">+61433671631</section>
-            <section class="card"><a href="mailto:alexander.h.perry@gmail.com">alexander.h.perry@gmail.com</a></section>
-            <section class="card"><a href="http://github.com/Alexander-Perry">GitHub</a></section>
-        </section>
-        </section>
+            <section class="container-row" id="Contact">
+                <header class="card-header">
+                    <h2>Contact Me</h2>
+                </header>
+                <section class="card">+61433671631</section>
+                <section class="card"><a href="mailto:alexander.h.perry@gmail.com">alexander.h.perry@gmail.com</a>
+                </section>
+                <section class="card"><a href="http://github.com/Alexander-Perry">GitHub</a></section>
+            </section>
+    </section>
     </main>
     <footer>
         Alexander Perry - 2022
     </footer>
-</section>
+    </section>
 </body>
 
 </html>
