@@ -5,11 +5,15 @@
 body,
 a {
     background-color: #252525;
-    color: white;
+    color: lightgrey;
     font-family: Verdana, sans-serif;
 }
 
-/* Main Header Styling - Signature sized float left, Page links Float Right  To be adjusted to suit flexbox */
+a:hover {
+    color: white;
+}
+
+/* Main Header Styling*/
 .header {
     border-bottom: 1px solid black;
     padding-top: 20px;
@@ -18,14 +22,19 @@ a {
 
 .header ul li {
     display: inline;
-    margin-left: 20px;
     margin-right: 20px;
     justify-self: center;
 }
 
 .header img {
     width: 200px;
+    height: 100%;
+    /*height:100% Stops skewing from occurring on smaller screens */
+}
+
+h1 {
     margin-right: auto;
+    margin-left: 20px;
 }
 
 /* About me image as an oval */
@@ -47,21 +56,20 @@ a {
 /* Card Header */
 .card-header {
     flex: 0 0 230px;
-    border-right: 1px solid white;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-bottom: 20px;
-    text-align: right;
-    align-self: flex-start;
+    border-right: 1px solid lightgrey;
+    margin: 2%;
+    text-align: center;
 }
 
 .card {
+    max-width: 1200px;
     opacity: 75%;
     margin: 1%;
     position: relative;
 }
 
-.card:hover {
+.card:hover, 
+#About-Me .card {
     opacity: 100%;
 }
 
@@ -71,6 +79,11 @@ a {
     height: 100%;
     border-radius: 1%;
     border: 2px solid purple;
+}
+
+#Contact .card,
+#Contact .card-header {
+    align-self: center;
 }
 
 /* Title for each card */
@@ -98,12 +111,10 @@ footer {
     .container-row {
         display: flex;
         flex-direction: column;
-
     }
 
     .card-header {
         text-align: right;
-        align-self: flex-start;
         flex: 0;
         border: none;
         margin: 0;
