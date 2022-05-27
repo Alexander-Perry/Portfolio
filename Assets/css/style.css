@@ -68,7 +68,7 @@ h1 {
     position: relative;
 }
 
-.card:hover, 
+.card:hover,
 #About-Me .card {
     opacity: 100%;
 }
